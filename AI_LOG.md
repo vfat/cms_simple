@@ -8,7 +8,7 @@ Dokumen ini mencatat secara transparan bagaimana AI tools digunakan sebagai asis
 
 | AI Tool / Model | Bagian yang Dibantu | Peran Spesifik |
 | :--- | :--- | :--- |
-| **Antigravity / Claude (LLM Coding Assistant)** | • Scaffolding UI komponen Tailwind CSS<br>• Penyusunan dataset dummy UMKM (6 produk POS/HR/Add-on & 5 artikel blog SEO)<br>• Boilerplate form CRUD pada halaman CMS Admin (`/admin`) | Mempercepat penulisan markup JSX repetitif, tabel perbandingan fitur, serta pembuatan konten kopi marketing Bahasa Indonesia yang natural untuk UMKM. |
+| **Antigravity (LLM Coding Assistant)** | • Scaffolding UI komponen Tailwind CSS<br>• Penyusunan dataset dummy UMKM (6 produk POS/HR/Add-on & 5 artikel blog SEO)<br>• Boilerplate form CRUD pada halaman CMS Admin (`/admin`) | Mempercepat penulisan markup JSX repetitif, tabel perbandingan fitur, serta pembuatan konten kopi marketing Bahasa Indonesia yang natural untuk UMKM. |
 | **TypeScript Compiler (`tsc --noEmit`) & Vitest** | • Verifikasi kebenaran tipe (`strict: true`)<br>• Pengujian deterministik logika kuota & harga | Bertindak sebagai *quality gate* objektif untuk menolak halusinasi tipe atau bug logika aritmatika dari kode yang dihasilkan AI. |
 
 ---

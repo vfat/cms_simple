@@ -241,3 +241,4 @@ export function trackLandingCtaClick(label: string, destination: string): void {
     cta_destination: destination,
   });
 }
+

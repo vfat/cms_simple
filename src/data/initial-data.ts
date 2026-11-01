@@ -884,3 +884,4 @@ Mulai kuartal pertama tahun depan, Kodeva siap mendampingi brand UMKM Indonesia 
   ],
   lastUpdatedAt: "2026-11-01T00:00:00.000Z",
 };
+

@@ -9,8 +9,8 @@ Aplikasi web terintegrasi untuk brand fiktif **Kodeva** (penyedia ekosistem soft
 
 ## 🔗 Live Demo & Kredensial Akun CMS
 
-- **Live Website Deployment**: *(Tambahkan URL Vercel/Netlify setelah deploy, misal: `https://cms-simple-kodeva.vercel.app`)*
-- **Halaman CMS Admin**: `/admin`
+- **Live Website Deployment (Netlify)**: [https://kodeva.netlify.app/](https://kodeva.netlify.app/)
+- **Halaman CMS Admin**: [https://kodeva.netlify.app/admin](https://kodeva.netlify.app/admin) (`/admin`)
 - **Akun Demo CMS Marketing**:
   - **Email**: `admin@kodeva.id`
   - **Password**: `promo2026`
@@ -256,3 +256,4 @@ Landing page telah dioptimasi secara khusus untuk perangkat seluler (tanpa gamba
 | **Total Blocking Time (TBT)** | `10 ms` | `< 200 ms` |
 | **Cumulative Layout Shift (CLS)** | `0.000` | `< 0.100` |
 | **Speed Index (SI)** | `1.1 s` | `< 3.4 s` |
+

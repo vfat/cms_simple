@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { INITIAL_CMS_DATA, INITIAL_PRODUCTS } from "@/data/initial-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://kodeva-cms.vercel.app";
+  const baseUrl = "https://kodeva.netlify.app";
 
   const productUrls: MetadataRoute.Sitemap = INITIAL_PRODUCTS.map((p) => ({
     url: `${baseUrl}/catalog/${p.slug}`,
@@ -43,3 +43,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...articleUrls,
   ];
 }
+

@@ -163,24 +163,24 @@ Berikut blueprint yang wajib didokumentasikan di `README.md` untuk menjawab requ
 
 | ID | Klausul Requirement Brief | Komponen Implementasi | Status |
 | :--- | :--- | :--- | :--- |
-| **REQ-A1** | Landing section: Hero, Featured, Testimonial, FAQ | `components/landing/` | Planned |
-| **REQ-A2** | Konten section diedit lewat CMS oleh user non-teknis | `app/admin/` & `lib/cms/` | Planned |
-| **REQ-A3** | Form lead capture + validasi + proteksi spam | `components/landing/LeadForm.tsx` | Planned |
-| **REQ-A4** | Blog list (pagination) & Blog detail (`[slug]`) | `app/blog/page.tsx` & `app/blog/[slug]/page.tsx` | Planned |
-| **REQ-A5** | Blog CMS: judul, slug, cover, rich text, kategori, draft/publish, tautan produk | `app/admin/articles/` | Planned |
-| **REQ-A6** | Perubahan CMS tampil tanpa manual deploy + strategi caching | On-demand revalidation / ISR | Planned |
-| **REQ-B1** | Katalog minimal 6 produk dengan filter kategori | `app/catalog/page.tsx` | Planned |
-| **REQ-B2** | Detail produk: screenshot, harga coret, sisa kuota, paket Basic/Pro/Biz | `app/catalog/[slug]/page.tsx` | Planned |
-| **REQ-B3** | Cart: tambah, ubah qty, hapus, subtotal otomatis, persist refresh | `store/useCartStore.ts` | Planned |
-| **REQ-B4** | Kuota promo bersama lintas paket dalam produk yang sama | `lib/quotaGuard.ts` | Planned |
-| **REQ-B5** | Checkout form validasi + simulasi bayar sukses/gagal | `components/checkout/` | Planned |
-| **REQ-B6** | Loading, error, dan empty states di seluruh UI | `components/ui/` (Skeleton, EmptyState, Toast) | Planned |
-| **REQ-B7** | Mobile-first UX & keranjang mudah diakses dari semua halaman | `components/layout/Navbar.tsx` & Cart Drawer | Planned |
-| **REQ-C1** | Lighthouse Mobile Performance ≥ 80 | WebP images, zero layout shift, font optimization | Planned |
-| **REQ-C2** | GA4 dataLayer: view_item, add_to_cart, begin_checkout, cta_click | `hooks/useAnalytics.ts` | Planned |
-| **REQ-C3** | Preservasi parameter UTM ke form lead dan checkout payload | `hooks/useUTM.ts` | Planned |
-| **REQ-D1** | `README.md` (setup, arsitektur, asumsi, rencana backend, Lighthouse) | `README.md` | Planned |
-| **REQ-D2** | `AI_LOG.md` (tools, prompt, 2 koreksi AI, edge case test, kode manual) | `AI_LOG.md` | Planned |
+| **REQ-A1** | Landing section: Hero, Featured, Testimonial, FAQ | `src/app/page.tsx` | ✅ Verified |
+| **REQ-A2** | Konten section diedit lewat CMS oleh user non-teknis | `src/app/admin/page.tsx` & `src/store/useAppStore.ts` | ✅ Verified |
+| **REQ-A3** | Form lead capture + validasi + proteksi spam | `src/app/page.tsx` (Honeypot + Cooldown) | ✅ Verified |
+| **REQ-A4** | Blog list (pagination) & Blog detail (`[slug]`) | `src/app/blog/page.tsx` & `src/app/blog/[slug]/page.tsx` | ✅ Verified |
+| **REQ-A5** | Blog CMS: judul, slug, cover, rich text, kategori, draft/publish, tautan produk | `src/app/admin/page.tsx` | ✅ Verified |
+| **REQ-A6** | Perubahan CMS tampil tanpa manual deploy + strategi caching | `src/app/api/revalidate/route.ts` + Store Sync | ✅ Verified |
+| **REQ-B1** | Katalog minimal 6 produk dengan filter kategori | `src/app/catalog/page.tsx` | ✅ Verified |
+| **REQ-B2** | Detail produk: screenshot, harga coret, sisa kuota, paket Basic/Pro/Biz | `src/app/catalog/[slug]/page.tsx` | ✅ Verified |
+| **REQ-B3** | Cart: tambah, ubah qty, hapus, subtotal otomatis, persist refresh | `src/components/cart/CartDrawer.tsx` & `useAppStore.ts` | ✅ Verified |
+| **REQ-B4** | Kuota promo bersama lintas paket dalam produk yang sama | `src/lib/quota-guard.ts` & `quota-guard.test.ts` | ✅ Verified |
+| **REQ-B5** | Checkout form validasi + simulasi bayar sukses/gagal | `src/app/checkout/page.tsx` | ✅ Verified |
+| **REQ-B6** | Loading, error, dan empty states di seluruh UI | `src/app/catalog/page.tsx` & `CartDrawer.tsx` | ✅ Verified |
+| **REQ-B7** | Mobile-first UX & keranjang mudah diakses dari semua halaman | `src/components/layout/Navbar.tsx` & `CartDrawer.tsx` | ✅ Verified |
+| **REQ-C1** | Lighthouse Mobile Performance ≥ 80 | `public/lighthouse-mobile-score.svg` (Score: 98) | ✅ Verified |
+| **REQ-C2** | GA4 dataLayer: view_item, add_to_cart, begin_checkout, cta_click | `src/lib/analytics.ts` & `AnalyticsAndUTMProvider.tsx` | ✅ Verified |
+| **REQ-C3** | Preservasi parameter UTM ke form lead dan checkout payload | `src/lib/analytics.ts` (`kodeva_utm_attribution_v1`) | ✅ Verified |
+| **REQ-D1** | `README.md` (setup, arsitektur, asumsi, rencana backend, Lighthouse) | `README.md` | ✅ Verified |
+| **REQ-D2** | `AI_LOG.md` (tools, prompt, 3 koreksi AI, edge case test, kode manual) | `AI_LOG.md` | ✅ Verified |
 
 ---
 
